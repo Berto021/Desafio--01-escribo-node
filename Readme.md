@@ -4,7 +4,7 @@
 
 ## SOBRE O PROJETO 🚀
 
-o projeto se consiste em um desafio técnico para a vaga de estágio da Escribo inovação para o aprendizado
+o projeto se consiste em um desafio técnico para a vaga de estágio da Escribo inovação para o aprendizado e está é a versão feita com [Node](https://nodejs.org)
 
 ## 👨‍🏭 Desafio
 
