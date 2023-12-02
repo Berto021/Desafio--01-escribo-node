@@ -4,13 +4,21 @@ const readline = require("readline").createInterface({
 });
 readline.question(`Digite um número: `, (num) => {
   const array = [];
-  for (let i = num - 1; i > 0; i--) {
-    if (i % 3 === 0 || i % 5 === 0) {
-      array.push(i);
+  const newNumber = Number(num);
+
+  if (Number.isInteger(newNumber && newNumber >= 0)) {
+    for (let i = num - 1; i > 0; i--) {
+      if (i % 3 === 0 || i % 5 === 0) {
+        array.push(i);
+      }
     }
+    const total = array.reduce((acc, value) => acc + value);
+
+    console.log(`Esses são os números aptos: ${array}`);
+    console.log(`Essa é a soma deles:${total}`);
+  } else {
+    console.log(`digite um numero inteiro positivo`);
   }
-  const total = array.reduce((acc, value) => acc + value);
-  console.log(`Esses são os núm ${array}`);
-  console.log(`Essa é a soma deles:${total}`);
+
   readline.close();
 });
